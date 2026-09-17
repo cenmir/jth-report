@@ -16,6 +16,10 @@ cd ~/my-lab-1
 quarto render report.ipynb --to pdf
 ```
 
+**On jupyter.ju.se:** open `report.ipynb` in your copy and click **Render with Quarto** in the
+toolbar (or menu **Quarto → Render with Quarto (PDF)**). The PDF appears next to the file.
+Don't use *File → Save and Export Notebook As → PDF* — it doesn't use Quarto or this template.
+
 To update your local copy of the template with the latest version:
 
 ```bash
