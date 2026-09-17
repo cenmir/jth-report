@@ -24,3 +24,8 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+# rendered HTML report + its media (regenerate with the Render button)
+report-html.html
+report-html_files/
+circle_animation.gif
+circle_animation.mp4

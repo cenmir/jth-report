@@ -28,7 +28,10 @@ update-templates
 
 ## What's inside
 
-- `report.ipynb` — the notebook template, with sections, figures, equations, citations
+- `report.ipynb` — the notebook template for **PDF**, with sections, figures, equations, citations
+- `report-html.ipynb` — the **HTML** variant: one self-contained file, with worked examples of
+  animations (GIF, MP4, interactive player), interactive Plotly graphs, audio, tabsets and
+  foldable code. Render it with **Render to html using Quarto**.
 - `JTH-Report-Template.pdf` — the rendered template (regenerate: `quarto render report.ipynb --to pdf --output JTH-Report-Template.pdf`)
 - `titlepage.tex` — custom Swedish title page, included via Quarto YAML
 - `library.bib` — example bibliography
