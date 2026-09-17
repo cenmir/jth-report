@@ -3,6 +3,8 @@
 Quarto + LaTeX template for lab reports at Jönköping University, School of Engineering.
 Swedish title page ("Labbrapport"), custom JTH cover, bibliography, figure handling, and code cells preconfigured.
 
+**Example output:** [`JTH-Report-Template.pdf`](JTH-Report-Template.pdf) — what `report.ipynb` looks like rendered.
+
 ## How to use it
 
 This repository is intended to be used as a **read-only reference**.
@@ -23,6 +25,7 @@ update-templates
 ## What's inside
 
 - `report.ipynb` — the notebook template, with sections, figures, equations, citations
+- `JTH-Report-Template.pdf` — the rendered template (regenerate: `quarto render report.ipynb --to pdf --output JTH-Report-Template.pdf`)
 - `titlepage.tex` — custom Swedish title page, included via Quarto YAML
 - `library.bib` — example bibliography
 - `graphics/` — JTH school logo and example figures
