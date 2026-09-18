@@ -29,3 +29,8 @@ report-html.html
 report-html_files/
 circle_animation.gif
 circle_animation.mp4
+# rendered output anywhere in the tree (regenerate with the Render buttons)
+report-html.html
+*/report-html.html
+circle_animation.*
+*/circle_animation.*
