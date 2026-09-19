@@ -50,6 +50,8 @@ update-templates
   `quarto render report.ipynb --to pdf --execute --output JTH-Report-Template.pdf`)
 - `titlepage.tex` the custom title page, included via Quarto YAML
 - `library.bib` example bibliography
+- `ieee.csl`, `apa-7th.csl` citation styles; IEEE is the default, and the `csl:` line in the
+  YAML block switches to APA (same files and wording as jth-thesis)
 - `graphics/` JTH school logo and example figures
 
 Keeping the two in step: when you change something in one language, make the
