@@ -17,28 +17,48 @@ the template needs is in your copy.
 [`en/JTH-Report-Template.pdf`](en/JTH-Report-Template.pdf), what `report.ipynb`
 looks like rendered.
 
-## How to use it
+## On jupyter.ju.se
 
-This repository is intended to be used as a **read-only reference**.
-Copy it, then edit the copy. Do not edit the files in `~/templates/jth-report/` directly.
+Nothing to install and no terminal needed. Python, Jupyter, Quarto and LaTeX
+are already there, and this template is already in your account.
+
+1. Sign in at [jupyter.ju.se](https://jupyter.ju.se).
+2. On the start page (the **Launcher**, opened with the **+** button above the
+   file browser) look under **JTH templates** and click **New lab report
+   (English)** or **Ny labbrapport (svenska)**. Your own copy is created
+   (`lab1`, `lab2`, … one per lab) and opened for you.
+3. Write in `report.ipynb`: text and equations in markdown cells, figures from
+   code cells.
+4. Click **PDF** in the toolbar. The same choices are in the **Quarto** menu,
+   and right-clicking the file in the file browser renders it to PDF. A panel
+   opens and shows the progress; when it says `Output created: report.pdf`, the
+   PDF is next to your file. The first render can take a minute while LaTeX
+   packages are installed, later ones take seconds.
+5. **HTML** does the same for `report-html.ipynb`, and **Preview** opens a live
+   preview in a browser tab that updates every time you save. Stop it with
+   **Quarto → Stop the preview**.
+
+Two things to avoid: do not work inside `~/templates/jth-report`, which is a
+read-only reference that is updated for you, and do not use *File > Save and
+Export Notebook As > PDF*, which ignores this template.
+
+The copy in `~/templates` is refreshed automatically. To pull the latest
+version yourself, open a terminal and run `update-templates`.
+
+## On your own computer
+
+You need [Quarto](https://quarto.org/docs/get-started/), Python with Jupyter,
+and a LaTeX distribution (`quarto install tinytex` is the small option). Then
+copy a language folder out of this repository and render it:
 
 ```bash
-cp -r ~/templates/jth-report/en ~/my-lab-1     # or sv
+cp -r en ~/my-lab-1     # or sv
 cd ~/my-lab-1
 quarto render report.ipynb --to pdf
 ```
 
-**On jupyter.ju.se:** use the **New lab report (English)** or **New lab report
-(svenska)** card in the Launcher, which makes the copy for you and opens it.
-Then click **PDF** in the toolbar (or menu **Quarto**). The PDF appears next to
-the file. Don't use *File > Save and Export Notebook As > PDF*, it doesn't use
-Quarto or this template.
-
-To update your local copy of the template with the latest version:
-
-```bash
-update-templates
-```
+Copy the folder first and edit the copy; treat the repository itself as a
+read-only reference.
 
 ## What's inside each language folder
 
